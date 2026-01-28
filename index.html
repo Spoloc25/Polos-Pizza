@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumen Diario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <h2 class="logo">🍕 Polos Pizza 🍕</h2>
+    <ul>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="ventas.html">Ventas</a></li>
+      <li><a href="gastos.html">Gastos</a></li>
+      <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="main">
+    <h1>Resumen del día</h1>
+    <p id="fechaHoy"></p>
+
+    <section class="resumen">
+      <div class="card ventas">
+        <h3>Total Ventas</h3>
+        <p id="totalVentas">$0</p>
+      </div>
+
+      <div class="card gastos">
+        <h3>Total Gastos</h3>
+        <p id="totalGastos">$0</p>
+      </div>
+
+      <div class="card ganancia">
+        <h3>Ganancia</h3>
+        <p id="ganancia">$0</p>
+      </div>
+    </section>
+
+    <div id="resumenPago" class="resumen-pago"></div>
+
+    <button id="guardarReporte" class="btn-guardar">
+  💾 Guardar reporte del día
+</button>
+
+
+
+
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/index.js"></script>
+
+
+  <footer class="footer">
+  <p>© 2026 · Todos los derechos reservados · Stiven Polo</p>
+</footer>
+
+
+</body>
+</html>

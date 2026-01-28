@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reportes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reportes.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">🍕 Polos Pizza 🍕</h2>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="ventas.html">Ventas</a></li>
+      <li><a href="gastos.html">Gastos</a></li>
+      <li><a href="reportes.html" class="active">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <h1>Reportes</h1>
+
+    <!-- Historial de reportes -->
+    <div id="historialReportes" class="historial-reportes">
+      <div class="card-toggle">🗂 Historial de reportes</div>
+      <div class="card-content" style="display:none;">
+        <ul id="listaReportes"></ul>
+      </div>
+    </div>
+
+    <!-- Ganancia mensual -->
+    <div class="card mensual">
+      <h3>Ganancia mensual</h3>
+      <p id="gananciaMensual">$0</p>
+    </div>
+
+    <!-- Ganancia anual -->
+    <div class="card anual">
+      <h3>Ganancia anual</h3>
+      <p id="gananciaAnual">$0</p>
+    </div>
+
+    <!-- Promedio diario -->
+    <div class="card promedio">
+      <h3>Promedio diario</h3>
+      <p>Ventas promedio: $<span id="promedioVentas">0</span></p>
+      <p>Gastos promedio: $<span id="promedioGastos">0</span></p>
+      <p>Ganancia promedio: $<span id="promedioGanancia">0</span></p>
+    </div>
+
+    <!-- Ventas por método -->
+    <div class="card metodo">
+      <h3>Ventas por método (mensual)</h3>
+      <p>💵 Efectivo: $<span id="totalEfectivoMes">0</span></p>
+      <p>📱 Transferencia: $<span id="totalTransferenciaMes">0</span></p>
+    </div>
+
+    <!-- Top días -->
+    <div class="card top-dias">
+      <h3>Días destacados</h3>
+      <p>Día con más ventas: <span id="topDiaVentas">-</span></p>
+      <p>Día con más gastos: <span id="topDiaGastos">-</span></p>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    © 2026 · Todos los derechos reservados · Stiven Polo
+  </footer>
+
+  <script src="js/reportes.js"></script>
+</body>
+</html>

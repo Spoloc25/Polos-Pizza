@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ventas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/ventas.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h2 class="logo">🍕 Polos Pizza 🍕</h2>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="ventas.html" class="active">Ventas</a></li>
+      <li><a href="gastos.html">Gastos</a></li>
+      <li><a href="reportes.html">Reportes</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="main">
+    <h1>Registrar venta</h1>
+
+    <!-- FORMULARIO -->
+    <form id="formVenta">
+  <input type="text" id="tipoPizza" placeholder="Sabor de pizza" required>
+  <input type="number" id="cantidad" placeholder="Cantidad de pizzas" required>
+  <input type="number" id="precio" placeholder="Precio total" required>
+
+  <select id="metodo">
+    <option value="efectivo">Efectivo</option>
+    <option value="transferencia">Transferencia</option>
+  </select>
+
+  <button type="submit">Guardar venta</button>
+</form>
+
+
+    <!-- TOTAL -->
+    <h2>Total vendido hoy</h2>
+    <p id="totalVentas">$0</p>
+
+    <!-- LISTA -->
+    <h2>Ventas de hoy</h2>
+    <ul id="listaVentas"></ul>
+  </main>
+
+  <button id="borrarHoy" class="btn-borrar">
+  Borrar ventas de hoy
+</button>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2026 · Todos los derechos reservados · Stiven Polo
+  </footer>
+
+  <!-- JS -->
+  <script src="js/data.js"></script>
+  <script src="js/ventas.js"></script>
+
+</body>
+</html>
